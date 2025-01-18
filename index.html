@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3f93c4;
+        }
+
+        header {
+            background-color: #020522;
+            color: #fffcfc;
+            text-align: center;
+            padding: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    
+            
+
+        nav {
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #011122;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Style for tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        /* Form styling */
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #000000;
+        }
+
+        form input[type="submit"] {
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0f191f;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WELCOME TO A.M.G TECH SOLUTIONS!</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="content">
+            <h2>ABOUT ME</h2>
+            <img src="Screenshot_20250116-091614_1.png" alt="Adamu Muhammed Girei" 
+            style="width: 200px; height: 200px; border-radius: 15%; float: left; margin-right: 20px;">
+            <p><strong> < HELLO! /> Welcome to my Personal Website</strong></p>
+            <p><b>My name is < ADAMU MUHAMMED GIREI />, C E O at A.M.G TECH SOLUTIONS, Nigeria.</b></p>
+            <p><b>I'm a creative designer and Front-End developer, who aimsto work with small businesses and marginalized communities to bring their passions to life. I enjoy learning and exploring the latest tech trends, and working on personal projects to enhance my skills.</b></p>
+        </div>
+    </section>
+
+    
+        <div class="content">
+            <h2>MY WORK</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <ul>
+                <li>Personal Portfolio Website</li>
+                <li>Online Store</li>
+                <li>Data Visualization Dashboard</li>
+                <li>Blog Website</li>
+            </ul>
+
+            <h3>VIDEO DEMO</h3>
+            <video controls width="600">
+                <source src="Dragonheart_Battle_for_the_Heartfire_(2017)_BluRay_high_(fzmovies.net).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="13 Angels In The Sky - (SongsLover.com).mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="content">
+            <h2>MY RESUME</h2>
+            <p>Below is a brief overview of my job experience:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Job Title</th>
+                        <th>Company</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Front-End Developer</td>
+                        <td>AMG Tech Solutions</td>
+                        <td>2025 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>Web Developer Intern</td>
+                        <td>GoMyCode Software Developer Bootcamp</td>
+                        <td>2024 - 2025</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>CONTACT ME</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>E-mail:Babsgirei@gmail.com        Phone:+234 810 6999 804</p>
+        <p>&copy; 2025 My Personal Website. All Rights Reserved.</p>
+    </footer>
+
+</body>E-mail: Babsgire@gmail.com</p>
+
+</html>
